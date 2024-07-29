@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Chácara do Seu Pai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="scripts.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "NJ9y5QWgZiajtYeCR",
+  });
+})();
+</script>
+   
+</head>
+<body>
+    <header>
+        <h1>Chácara Espaço Da Saúde</h1>
+        <nav>
+            <a href="inicio.html">Início</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Agendar Festa</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Fale Conosco</h2>
+            <p>O espaço chácara da saúde está disponível pra locação.<br>
+            Períodos de 6, 12 e 24 horas.<br>
+            Formulário para calcular o valor:</p>
+            <form id="contact-form">
+                <label for="responsavel">Nome do Responsável:</label>
+                <input type="text" id="responsavel" name="responsavel" required>
+
+                <label for="contato">Contato:</label>
+                <input type="text" id="contato" name="contato" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="tipo-festa">Tipo de festa:</label>
+                <input type="text" id="tipo-festa" name="tipo-festa" required>
+
+                <label for="quantidade-pessoas">Quantidade de pessoas:</label>
+                <input type="number" id="quantidade-pessoas" name="quantidade-pessoas" required>
+
+                <label for="horario-entrada">Horário da entrada:</label>
+                <input type="time" id="horario-entrada" name="horario-entrada" required>
+
+                <label for="horario-saida">Horário da saída:</label>
+                <input type="time" id="horario-saida" name="horario-saida" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p class="obs">
+                OBS: esse não é o horário da festa, é o de chegada.<br>
+                Caso ultrapasse o horário da festa, Fração de hora: 100 reais até as 22 H, após 200.<br>
+                Observação: no ato do contrato será cobrado 30% de sinal e o restante 10 dias antes da festa.<br>
+                O contratante tem 7 dias antes da festa para cancelar, com uma perda de 30% do valor total.<br>
+                Em caso de troca de data 7 dias antes da festa será cobrada uma multa de 20%.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chácara Espaço Da Saúde. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

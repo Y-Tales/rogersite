@@ -1,0 +1,110 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+.hero {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.about {
+    margin: 2rem 0;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+.contact .obs {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+
+
+.piso {
+
+    position: fixed;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+ 
+    bottom: 0;
+    width: 100%;
+}
+
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+ 
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+    .hero, .about, .contact, .gallery {
+        padding: 0 10px;
+    }
+
+    .contact form {
+        padding: 0 10px;
+    }
+}
